@@ -27,6 +27,21 @@ struct ContentView: View {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 struct LoaderCircle: View {
     @State var isAnimated: Bool = false
     
@@ -44,7 +59,7 @@ struct LoaderCircle: View {
             ZStack {
                 Ellipse()
                     .foregroundColor(.white)
-                    .cornerRadius(isAnimated ? 60 : 0)
+                    .cornerRadius(isAnimated ? 70 : 0)
                     .frame(width: 70, height: 70, alignment: .center)
                     .foregroundColor(.clear)
                     .overlay(isAnimated ?
@@ -60,7 +75,7 @@ struct LoaderCircle: View {
                         self.animate.toggle()
                     }
             }
-            .offset(y: 90)
+            .offset(y: 70)
             
             ZStack {
                 Ellipse()
@@ -81,8 +96,8 @@ struct LoaderCircle: View {
                         self.animate1.toggle()
                     }
             }
-            .offset(y: 90)
-            .rotationEffect(.degrees(60))
+            .offset(y: 70)
+            .rotationEffect(.degrees(50))
             
             ZStack {
                 Ellipse()
@@ -103,8 +118,8 @@ struct LoaderCircle: View {
                         self.animate2.toggle()
                     }
             }
-            .offset(y: 90)
-            .rotationEffect(.degrees(110))
+            .offset(y: 70)
+            .rotationEffect(.degrees(100))
             
             ZStack {
                 Ellipse()
@@ -125,8 +140,8 @@ struct LoaderCircle: View {
                         self.animate2.toggle()
                     }
             }
-            .offset(y: 90)
-            .rotationEffect(.degrees(160))
+            .offset(y: 70)
+            .rotationEffect(.degrees(150))
             
             ZStack {
                 Ellipse()
@@ -147,8 +162,8 @@ struct LoaderCircle: View {
                         self.animate3.toggle()
                     }
             }
-            .offset(y: 90)
-            .rotationEffect(.degrees(210))
+            .offset(y: 70)
+            .rotationEffect(.degrees(200))
             
             ZStack {
                 Ellipse()
@@ -169,8 +184,8 @@ struct LoaderCircle: View {
                         self.animate4.toggle()
                     }
             }
-            .offset(y: 90)
-            .rotationEffect(.degrees(260))
+            .offset(y: 70)
+            .rotationEffect(.degrees(250))
             
             ZStack {
                 Ellipse()
@@ -191,8 +206,9 @@ struct LoaderCircle: View {
                         self.animate5.toggle()
                     }
             }
-            .offset(y: 90)
-            .rotationEffect(.degrees(310))
+            .offset(y: 70)
+            .rotationEffect(.degrees(300))
+            
         }
         .rotationEffect(.degrees(isAnimated ? 0 : 180))
         .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
