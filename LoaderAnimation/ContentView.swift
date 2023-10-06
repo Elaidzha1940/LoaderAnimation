@@ -35,28 +35,169 @@ struct LoaderCircle: View {
     @State var animate2 = false
     @State var animate3 = false
     @State var animate4 = false
+    @State var animate5 = false
     
     var body: some View {
         
         ZStack {
             
-            Rectangle()
-                .foregroundColor(.white)
-                .cornerRadius(isAnimated ? 60 : 0)
-                .frame(width: 70, height: 70, alignment: .center)
-                .foregroundColor(.clear)
-                .overlay(isAnimated ?
-                         RoundedRectangle(cornerRadius: 50)
-                    .stroke(Color.black, lineWidth: 10) :
-                            RoundedRectangle(cornerRadius: 0)
-                    .stroke(Color.black, lineWidth: 10))
-                .opacity(isAnimated ? 0.5 : 1)
-                .scaleEffect(isAnimated ? 0.4 : 1)
-                .rotationEffect(Angle(degrees: isAnimated ? 90 : -90))
-                .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
-                .onAppear {
-                    self.animate.toggle()
-                }
-        }.offset(y: 80)
+            ZStack {
+                Ellipse()
+                    .foregroundColor(.white)
+                    .cornerRadius(isAnimated ? 60 : 0)
+                    .frame(width: 70, height: 70, alignment: .center)
+                    .foregroundColor(.clear)
+                    .overlay(isAnimated ?
+                             RoundedRectangle(cornerRadius: 50)
+                        .stroke(Color.black, lineWidth: 10) :
+                                RoundedRectangle(cornerRadius: 0)
+                        .stroke(Color.black, lineWidth: 10))
+                    .opacity(isAnimated ? 0.5 : 1)
+                    .scaleEffect(isAnimated ? 0.4 : 1)
+                    .rotationEffect(Angle(degrees: isAnimated ? 360 : -90))
+                    .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
+                    .onAppear {
+                        self.animate.toggle()
+                    }
+            }
+            .offset(y: 90)
+            
+            ZStack {
+                Ellipse()
+                    .foregroundColor(.white)
+                    .cornerRadius(isAnimated ? 60 : 0)
+                    .frame(width: 70, height: 70, alignment: .center)
+                    .foregroundColor(.clear)
+                    .overlay(isAnimated ?
+                             RoundedRectangle(cornerRadius: 50)
+                        .stroke(Color.black, lineWidth: 10) :
+                                RoundedRectangle(cornerRadius: 0)
+                        .stroke(Color.black, lineWidth: 10))
+                    .opacity(isAnimated ? 0.5 : 1)
+                    .scaleEffect(isAnimated ? 0.4 : 1)
+                    .rotationEffect(Angle(degrees: isAnimated ? 90 : -90))
+                    .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
+                    .onAppear {
+                        self.animate1.toggle()
+                    }
+            }
+            .offset(y: 90)
+            .rotationEffect(.degrees(60))
+            
+            ZStack {
+                Ellipse()
+                    .foregroundColor(.white)
+                    .cornerRadius(isAnimated ? 60 : 0)
+                    .frame(width: 70, height: 70, alignment: .center)
+                    .foregroundColor(.clear)
+                    .overlay(isAnimated ?
+                             RoundedRectangle(cornerRadius: 50)
+                        .stroke(Color.black, lineWidth: 10) :
+                                RoundedRectangle(cornerRadius: 0)
+                        .stroke(Color.black, lineWidth: 10))
+                    .opacity(isAnimated ? 0.5 : 1)
+                    .scaleEffect(isAnimated ? 0.4 : 1)
+                    .rotationEffect(Angle(degrees: isAnimated ? 90 : -90))
+                    .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
+                    .onAppear {
+                        self.animate2.toggle()
+                    }
+            }
+            .offset(y: 90)
+            .rotationEffect(.degrees(110))
+            
+            ZStack {
+                Ellipse()
+                    .foregroundColor(.white)
+                    .cornerRadius(isAnimated ? 60 : 0)
+                    .frame(width: 70, height: 70, alignment: .center)
+                    .foregroundColor(.clear)
+                    .overlay(isAnimated ?
+                             RoundedRectangle(cornerRadius: 50)
+                        .stroke(Color.black, lineWidth: 10) :
+                                RoundedRectangle(cornerRadius: 0)
+                        .stroke(Color.black, lineWidth: 10))
+                    .opacity(isAnimated ? 0.5 : 1)
+                    .scaleEffect(isAnimated ? 0.4 : 1)
+                    .rotationEffect(Angle(degrees: isAnimated ? 90 : -90))
+                    .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
+                    .onAppear {
+                        self.animate2.toggle()
+                    }
+            }
+            .offset(y: 90)
+            .rotationEffect(.degrees(160))
+            
+            ZStack {
+                Ellipse()
+                    .foregroundColor(.white)
+                    .cornerRadius(isAnimated ? 60 : 0)
+                    .frame(width: 70, height: 70, alignment: .center)
+                    .foregroundColor(.clear)
+                    .overlay(isAnimated ?
+                             RoundedRectangle(cornerRadius: 50)
+                        .stroke(Color.black, lineWidth: 10) :
+                                RoundedRectangle(cornerRadius: 0)
+                        .stroke(Color.black, lineWidth: 10))
+                    .opacity(isAnimated ? 0.5 : 1)
+                    .scaleEffect(isAnimated ? 0.4 : 1)
+                    .rotationEffect(Angle(degrees: isAnimated ? 90 : -90))
+                    .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
+                    .onAppear {
+                        self.animate3.toggle()
+                    }
+            }
+            .offset(y: 90)
+            .rotationEffect(.degrees(210))
+            
+            ZStack {
+                Ellipse()
+                    .foregroundColor(.white)
+                    .cornerRadius(isAnimated ? 60 : 0)
+                    .frame(width: 70, height: 70, alignment: .center)
+                    .foregroundColor(.clear)
+                    .overlay(isAnimated ?
+                             RoundedRectangle(cornerRadius: 50)
+                        .stroke(Color.black, lineWidth: 10) :
+                                RoundedRectangle(cornerRadius: 0)
+                        .stroke(Color.black, lineWidth: 10))
+                    .opacity(isAnimated ? 0.5 : 1)
+                    .scaleEffect(isAnimated ? 0.4 : 1)
+                    .rotationEffect(Angle(degrees: isAnimated ? 90 : -90))
+                    .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
+                    .onAppear {
+                        self.animate4.toggle()
+                    }
+            }
+            .offset(y: 90)
+            .rotationEffect(.degrees(260))
+            
+            ZStack {
+                Ellipse()
+                    .foregroundColor(.white)
+                    .cornerRadius(isAnimated ? 60 : 0)
+                    .frame(width: 70, height: 70, alignment: .center)
+                    .foregroundColor(.clear)
+                    .overlay(isAnimated ?
+                             RoundedRectangle(cornerRadius: 50)
+                        .stroke(Color.black, lineWidth: 10) :
+                                RoundedRectangle(cornerRadius: 0)
+                        .stroke(Color.black, lineWidth: 10))
+                    .opacity(isAnimated ? 0.5 : 1)
+                    .scaleEffect(isAnimated ? 0.4 : 1)
+                    .rotationEffect(Angle(degrees: isAnimated ? 90 : -90))
+                    .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
+                    .onAppear {
+                        self.animate5.toggle()
+                    }
+            }
+            .offset(y: 90)
+            .rotationEffect(.degrees(310))
+        }
+        .rotationEffect(.degrees(isAnimated ? 0 : 180))
+        .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
+        .onAppear {
+            self.isAnimated.toggle()
+        }
     }
 }
