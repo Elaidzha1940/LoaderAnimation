@@ -1,9 +1,11 @@
+//  /*
 //
-//  LoaderAnimationApp.swift
-//  LoaderAnimation
+//  Projcet: LoaderAnimation
+//  File: LoaderAnimationApp.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 06.10.2023
 //
-//  Created by Elaidzha Shchukin on 06.10.2023.
-//
+//  */
 
 import SwiftUI
 
